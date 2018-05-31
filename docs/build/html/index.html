@@ -1,111 +1,314 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Welcome to ag09’s documentation! &#8212; documentación de ag09 - </title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Gaussian09 &mdash; documentación de ag09 - </title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Índice" href="genindex.html" />
-    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="search" title="Búsqueda" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
    
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  <div class="wy-grid-for-nav">
 
-  </head>
-  <body>
-  
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+          
+            <a href="#" class="icon icon-home"> ag09
+          
+
+          
+          </a>
+
+          
             
-  <div class="section" id="welcome-to-ag09-s-documentation">
-<h1>Welcome to ag09’s documentation!<a class="headerlink" href="#welcome-to-ag09-s-documentation" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="toctree-wrapper compound">
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Gaussian09</a><ul>
+<li><a class="reference internal" href="#ag09-analizador-de-datos-de-salida-para-gaussian09">Ag09 (Analizador de datos de salida para Gaussian09)</a><ul>
+<li><a class="reference internal" href="#que-es">¿Qué es?</a></li>
+<li><a class="reference internal" href="#que-hace">¿Qúe hace?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lista-de-opciones">Lista de opciones</a><ul>
+<li><a class="reference internal" href="#opcion-hf-hirshfeld">Opción -hf (Hirshfeld)</a></li>
+<li><a class="reference internal" href="#opcion-m-mulliken">Opción -m (Mulliken)</a></li>
+<li><a class="reference internal" href="#opcion-apt-atomic-polar-tensor">Opción -apt (Atomic polar tensor)</a></li>
+<li><a class="reference internal" href="#opcion-tc-thermochemical">Opción -tc  (thermochemical)</a></li>
+<li><a class="reference internal" href="#opcion-acm-atomic-charges-matrix">Opción -acm (Atomic charges matrix)</a></li>
+<li><a class="reference internal" href="#opcion-asd-atomic-spin-densities-matrix">Opción -asd (Atomic spin densities matrix)</a></li>
+<li><a class="reference internal" href="#opcion-hsd-hirshfeld-spin-densities">Opción -hsd (Hirshfeld spin densities)</a></li>
+<li><a class="reference internal" href="#opcion-nao-atomo-natural-atomic-orbital-occupancies">Opción -nao [Átomo] (Natural atomic orbital occupancies)</a></li>
+<li><a class="reference internal" href="#opcion-mep-molecular-electrostatic-potential">Opción -mep (Molecular electrostatic potential)</a></li>
+<li><a class="reference internal" href="#opcion-a-all">Opción -a (ALL)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Enlazar permanentemente con este título">¶</a></h1>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">ag09</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Gaussian09</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="gaussian09">
+<h1>Gaussian09<a class="headerlink" href="#gaussian09" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="ag09-analizador-de-datos-de-salida-para-gaussian09">
+<h2>Ag09 (Analizador de datos de salida para Gaussian09)<a class="headerlink" href="#ag09-analizador-de-datos-de-salida-para-gaussian09" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="que-es">
+<h3>¿Qué es?<a class="headerlink" href="#que-es" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Es un programa que fue parte de mi proyecto de servicio social, realizado en colaboración entre el laboratorio de supercómputo y el área de fisicoquímica teórica de la Universidad Autónoma Metropolitana Unidad Iztapalapa.
+Fue programado en Python y sirve para  el análisis de datos de salida del programa Gaussian09</p>
+</div>
+<div class="section" id="que-hace">
+<h3>¿Qúe hace?<a class="headerlink" href="#que-hace" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Es capaz de extraer información útil para el usario, filtrando el contenido de los archivos de salida de Gaussian09.
+También puede guardar los resultados del análisis en un archivo CSV (comma separated values) para facilitar
+la manipulación de los datos en programas como EXCEL, Libreoffice Calc, etcetera.</p>
+<p>Puede procesar uno o tres archivos. Si se desean procesar 3 archivos el programa los organizará
+de acuerdo a su carga, entonces los archivos serán procesados y los resultados organizados de la siguiente
+manera:</p>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Índice</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Índice de Módulos</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Página de Búsqueda</span></a></li>
+<li>El archivo con carga +1 será <strong>salidaN-1.log</strong></li>
+<li>El archivo con carga 0 será <strong>salida.log</strong></li>
+<li>El archivo con carga -1 será <strong>salidaN+1.log</strong></li>
 </ul>
+<p>En cualquiera de los casos si se pide una opción que no está presente en el archivo de salida
+se mostrará la advertencia de que este dato no existe en el archivo.</p>
+<p>Los datos que se pueden extraer son:</p>
+<ul class="simple">
+<li>Cargas atómicas de Mulliken</li>
+<li>Cargas de tensor polar atómico (APT)</li>
+<li>Energia de Hirshfeld</li>
+<li>Datos termoquímicos</li>
+<li>Diagonal de la matriz de cargas atómicas</li>
+<li>Diagonal de la matriz de densidades atómicas</li>
+<li>Densidades de spin de Hirshfeld</li>
+<li>Ocupaciones orbitales atómicas naturales (NAO)</li>
+<li>Potencial electrostático Molecular (MEP)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="lista-de-opciones">
+<h2>Lista de opciones<a class="headerlink" href="#lista-de-opciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="opcion-hf-hirshfeld">
+<h3>Opción -hf (Hirshfeld)<a class="headerlink" href="#opcion-hf-hirshfeld" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Muestra el valor de la energía de Hirshfeld con unidades Hartrees</p>
+</div>
+<div class="section" id="opcion-m-mulliken">
+<h3>Opción -m (Mulliken)<a class="headerlink" href="#opcion-m-mulliken" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Muestra el análisis poblacional de Mulliken, es decir, Mulliken atomic charges, mulliken atomic charges with hydrogens summed
+y Mulliken atomic spin densities</p>
+</div>
+<div class="section" id="opcion-apt-atomic-polar-tensor">
+<h3>Opción -apt (Atomic polar tensor)<a class="headerlink" href="#opcion-apt-atomic-polar-tensor" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Muestra el analisis poblacional APT, es decir, APT atomic charges y APT atomic charges with hydrogens summed</p>
+</div>
+<div class="section" id="opcion-tc-thermochemical">
+<h3>Opción -tc  (thermochemical)<a class="headerlink" href="#opcion-tc-thermochemical" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Muestra los datos termoquímicos como dipolo, temperatura, presión</p>
+</div>
+<div class="section" id="opcion-acm-atomic-charges-matrix">
+<h3>Opción -acm (Atomic charges matrix)<a class="headerlink" href="#opcion-acm-atomic-charges-matrix" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Muestra la diagonal de la matriz de cargas atómicas</p>
+</div>
+<div class="section" id="opcion-asd-atomic-spin-densities-matrix">
+<h3>Opción -asd (Atomic spin densities matrix)<a class="headerlink" href="#opcion-asd-atomic-spin-densities-matrix" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Muestra la diagonal de la matriz de densidades atómicas</p>
+</div>
+<div class="section" id="opcion-hsd-hirshfeld-spin-densities">
+<h3>Opción -hsd (Hirshfeld spin densities)<a class="headerlink" href="#opcion-hsd-hirshfeld-spin-densities" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Muestra las densidades de spin y las cargas de la matriz de Hirshfeld</p>
+</div>
+<div class="section" id="opcion-nao-atomo-natural-atomic-orbital-occupancies">
+<h3>Opción -nao [Átomo] (Natural atomic orbital occupancies)<a class="headerlink" href="#opcion-nao-atomo-natural-atomic-orbital-occupancies" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Muestra Natural atomic orbital occupancies, si no se escribe el parámetro <cite>[Átomo]</cite> se toma por defecto el valor N (Nitrógeno)</p>
+</div>
+<div class="section" id="opcion-mep-molecular-electrostatic-potential">
+<h3>Opción -mep (Molecular electrostatic potential)<a class="headerlink" href="#opcion-mep-molecular-electrostatic-potential" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Muestra molecular electrostatic potential</p>
+</div>
+<div class="section" id="opcion-a-all">
+<h3>Opción -a (ALL)<a class="headerlink" href="#opcion-a-all" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Muestra todos los datos posibles utilizando todas las opciones anteriores</p>
+</div>
+</div>
 </div>
 
 
+           </div>
+           
           </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Jonathan Alfaro.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="#">ag09</a></h1>
+
+    </section>
+
+  </div>
+  
 
 
+  
 
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            LANGUAGE:'es',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
+  
 
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
 
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
 
-
-<h3>Navegación</h3>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="#">Documentation overview</a><ul>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Búsqueda rápida</h3>
-    <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Ir a" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2018, Jonathan Alfaro.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="_sources/index.md.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  </body>
+</body>
 </html>
