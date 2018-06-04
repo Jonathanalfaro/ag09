@@ -6,7 +6,8 @@ Reporte los errores y problemas en github o al correo del autor
 
 Jonathan I. Alfaro Pérez
 
-Universidad Autónoma Metropolitana Iztapalapa    
+Universidad Autónoma Metropolitana Unidad Iztapalapa  
+
 Iztapalapa Ciudad de México  
 
 Contacto:
