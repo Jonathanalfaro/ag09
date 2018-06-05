@@ -7,6 +7,12 @@ El siguiente texto tiene como objetivo brindarte ayuda de como se utiliza el pro
 
 Recuerda que puedes pausar el video en cualquier momento y seleccionar los comandos de ejemplo. También puedes descargar el archivo de prueba para seguir exactamente el funcionamiento explicado.
 
+## Descarga y asignación de permiso para ejecutar
+
+Esta es la manera que yo creo es mas facil para descargar el programa, si sigues las instrucciones del video podras descargar y utilizar el programa en un minuto.
+
+<script src="https://asciinema.org/a/3iShTUdgTxjFslhUCyuk4SdMc.js" id="asciicast-3iShTUdgTxjFslhUCyuk4SdMc" async></script>
+
 ## Uso básico
 
 Despues de descargar y extraer el programa abra una terminal y cambie al directorio donde extrajo el contenido.  
