@@ -3,24 +3,21 @@
 
 El programa permite el paso de parámetros para indicarle que secciones de la salida de **Gaussian** quieres extraer.  
 
-El siguiente texto tiene como objetivo brindarte ayuda de como se utiliza el programa, la información está acompañada por un video en el que se explica detalladamente como utilizar cada una de las opciones y puedes seleccionar los comandos del video y pegarlos en tu sesión de terminal para probar su funcionamiento.  
-
-Recuerda que puedes pausar el video en cualquier momento y seleccionar los comandos de ejemplo. También puedes descargar el archivo de prueba para seguir exactamente el funcionamiento explicado.
+El siguiente texto tiene como objetivo brindarte ayuda de como se utiliza el programa, la información está acompañada por un video en el que se explica detalladamente como utilizar cada una de las opciones y  pausar el video en cualquier momento y seleccionar los comandos de ejemplo para pegarlos en tu terminal para probar su funcionamiento.  
 
 ## Descarga y asignación de permiso para ejecutar
 
-Esta es la manera que yo creo es mas facil para descargar el programa, si sigues las instrucciones del video podras descargar y utilizar el programa en un minuto.
+Esta es una manera sencilla de descargar el programa haciendo uso de la terminal, si sigues las instrucciones del video podras descargar y utilizar el programa en un solo unos minutos.
 
 <script src="https://asciinema.org/a/3iShTUdgTxjFslhUCyuk4SdMc.js" id="asciicast-3iShTUdgTxjFslhUCyuk4SdMc" async></script>
 
 ## Uso básico
 
-Despues de descargar y extraer el programa abra una terminal y cambie al directorio donde extrajo el contenido.  
-El uso del programa es de la siguiente forma:
+El uso básico del programa es de la siguiente forma:
 
-` $ python Ag09principal.py [opciones] [archivos] `  
+` $ ./jag09.py [opciones] [archivos] `  
 
-Se puede acceder a una lista de opciones que soporta el programa de la siguiente manera:  
+Como se pudo observar en el video anterior, se puede acceder a una lista de opciones que soporta el programa de la siguiente manera:  
 
 <script src="https://asciinema.org/a/1xLsTi5X4O7pHukn4TqQYAZJ8.js" id="asciicast-1xLsTi5X4O7pHukn4TqQYAZJ8" async></script>
 
@@ -43,6 +40,8 @@ el análisis, ejemplo:
 
 El comando anterior procesara el archivo ` salida.log ` filtrando el resultado para el átomo de hidrógeno (H).
 
+Si se omite el parametro para el valor del átomo el programa tomara el valor N (Nitrógeno)
+
 ## Opción exportar -e
 
 
@@ -50,8 +49,11 @@ Si se especifica la opcion ` -e ` se guardarán los datos de las opciones especi
 
 <script src="https://asciinema.org/a/928rzEI7VoqBDj0JEgxAt1tQP.js" id="asciicast-928rzEI7VoqBDj0JEgxAt1tQP" async></script>
 
-### Nota  
+### Notas  
 
+* Se debe tener permiso para escribir en la ruta especificada.
+* Si no se da una ruta y solo se escribe el nombre de archivo el archivo CSV se guardará en el directorio actual de trabajo
+* Aunque no es obligatorio se recomienda que los nombres de archivos no contengan espacios ni caracteres especiales.
 
 ## Procesar todas las opciones
 
