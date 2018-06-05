@@ -13,7 +13,6 @@ try:
     import argparse
     import re
     import csv
-    from Ag09principal import *
     from subprocess import PIPE, Popen
 except ImportError as ie:
     print '{0} install first'.format(ie)
@@ -41,46 +40,6 @@ parser.add_argument('archivos', nargs='+', help="Nombre de archivo a procesar")
 args = parser.parse_args()
 rutasarchivos = args.archivos
 
-
-
-def main(stdscr):
-    ''' Método principal, manda a llamar a la ventana principal segun el modo
-        Si es modo curses abre la ventana interactiva, si es modo terminal
-        pone todo en la terminal.
-
-        :param stdscr: estandar screen de curses
-
-    '''
-    vprincipal = VResumenCur(sys.argv)
-    vprincipal.muestraventana(stdscr)
-
-
-
-if __name__ == "__main__":
-    printenv = Popen(['printenv','TERM'], stdout=PIPE)
-    valorterm = printenv.stdout.read().replace('\n','')
-    printenv.stdout.close()
-
-    if len(args.archivos) > 3 or len(args.archivos) == 2:
-        print "Solo se pueden procesar 1 o 3 archivos"
-        exit(1)
-    if  'xterm' != valorterm:
-        print('Cambie manualmente el valor de la variable de entorno\n'
-              'TERM por xterm ejecutando el siguiente comando en la terminal:\n'
-              '\'export TERM=xterm\'.\n'
-              'El cambio es temporal y se restaurara a su valor original al volver a iniciar sesión')
-        exit(1)
-    modo = 'curses'
-    for elemento in sys.argv:
-        if elemento == '-t' or elemento == '--texto':
-            modo = 'term'
-            break
-    if modo == 'term':
-        #for archivo in args.file:
-        vprincipal = VResumenTer(sys.argv, args.archivos)
-
-    else:
-        curses.wrapper(main)
 
 
 # Clase VResumen. Es la ventana que muestra al usuario el resumen del LOG
@@ -1470,3 +1429,46 @@ class Correo:
             listac = listac + str(elemento) + ' '
         msgstatus = 'Se envio el correo a: ' + listac
         return msgstatus
+
+
+
+def main(stdscr):
+    ''' Método principal, manda a llamar a la ventana principal segun el modo
+        Si es modo curses abre la ventana interactiva, si es modo terminal
+        pone todo en la terminal.
+
+        :param stdscr: estandar screen de curses
+
+    '''
+    vprincipal = VResumenCur(sys.argv)
+    vprincipal.muestraventana(stdscr)
+
+
+
+if __name__ == "__main__":
+    printenv = Popen(['printenv','TERM'], stdout=PIPE)
+    valorterm = printenv.stdout.read().replace('\n','')
+    printenv.stdout.close()
+
+    if len(args.archivos) > 3 or len(args.archivos) == 2:
+        print "Solo se pueden procesar 1 o 3 archivos"
+        exit(1)
+    if  'xterm' != valorterm:
+        print('Cambie manualmente el valor de la variable de entorno\n'
+              'TERM por xterm ejecutando el siguiente comando en la terminal:\n'
+              '\'export TERM=xterm\'.\n'
+              'El cambio es temporal y se restaurara a su valor original al volver a iniciar sesión')
+        exit(1)
+    modo = 'curses'
+    for elemento in sys.argv:
+        if elemento == '-t' or elemento == '--texto':
+            modo = 'term'
+            break
+    if modo == 'term':
+        #for archivo in args.file:
+        vprincipal = VResumenTer(sys.argv, args.archivos)
+
+    else:
+        curses.wrapper(main)
+
+
