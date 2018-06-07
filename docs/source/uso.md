@@ -21,10 +21,34 @@ Como se pudo observar en el video anterior, se puede acceder a una lista de opci
 
 <script src="https://asciinema.org/a/1xLsTi5X4O7pHukn4TqQYAZJ8.js" id="asciicast-1xLsTi5X4O7pHukn4TqQYAZJ8" async></script>
 
-## Opciones -m, -apt, -hf, -tc, hsd, acm, mep
+## Opciones -m, -apt, -hf, -tc, hsd, acm, mep  
+
+### Opción -m (Mulliken population analisis)  
+
+<script src="https://asciinema.org/a/J5GHMyixymUKNpUwYIDa2DEoV.js" id="asciicast-J5GHMyixymUKNpUwYIDa2DEoV" async></script>
+
+### Opción -apt (Atomic polar tensor analisis)  
+
+<script src="https://asciinema.org/a/gDiZU16zTz09S9eQWYWy9juNM.js" id="asciicast-gDiZU16zTz09S9eQWYWy9juNM" async></script>
+
+### Opción -hf (Energía de Hirshfeld)  
+
+<script src="https://asciinema.org/a/OVgOTa42JPROOSEwaUrDz7dDT.js" id="asciicast-OVgOTa42JPROOSEwaUrDz7dDT" async></script>
+
+### Opción -tc (Datos termoquímicos)  
+
+<script src="https://asciinema.org/a/9RLu16qdfPO2NXiqth8Zc1G93.js" id="asciicast-9RLu16qdfPO2NXiqth8Zc1G93" async></script>
+
+### Opción -hsd   ( Hirshfeld spin densities)
+
+<script src="https://asciinema.org/a/HMwgeNVxfYkP5U19iKSfGxk6i.js" id="asciicast-HMwgeNVxfYkP5U19iKSfGxk6i" async></script>
+
+### Opción -acm (Atomic charges matrix diagonal)
+
+<script src="https://asciinema.org/a/dpAaZ53iBAqUinE2zuAWMK2rR.js" id="asciicast-dpAaZ53iBAqUinE2zuAWMK2rR" async></script>
 
 
-Estas opciones no requieren un parámetro adicional y pueden ser combinadas entre ellas
+Estas opciones pueden ser combinadas entre ellas
 
 
 <script src="https://asciinema.org/a/IyELYw8hcxTMW8L9BnqWuBjA7.js" id="asciicast-IyELYw8hcxTMW8L9BnqWuBjA7" async></script>
