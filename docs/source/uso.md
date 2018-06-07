@@ -50,21 +50,23 @@ Como se pudo observar en el video anterior, se puede acceder a una lista de opci
 
 Estas opciones pueden ser combinadas entre ellas
 
-
 <script src="https://asciinema.org/a/IyELYw8hcxTMW8L9BnqWuBjA7.js" id="asciicast-IyELYw8hcxTMW8L9BnqWuBjA7" async></script>
 
 
-## Opción NAO
+## Opción MEP (Molecular electrostatic potential)
+
+<script src="https://asciinema.org/a/oFxTJ7CRfzUWzyu92JJyyFsVH.js" id="asciicast-oFxTJ7CRfzUWzyu92JJyyFsVH" async></script>
+
+
+## Opción NAO (Natural atomic orbital occupancies)
 
 
 La opción NAO admite el paso de un parámetro adicional, este parametro es el símbolo químico del átomo al cual se le va a hacer
-el análisis, ejemplo:  
+el análisis, ejemplo para el Átomo de Nitrógeno:  
 
-` $ python Ag09principal.py -nao H salida.log `  
+` $ python Ag09principal.py -nao N salida.log `  
 
-El comando anterior procesara el archivo ` salida.log ` filtrando el resultado para el átomo de hidrógeno (H).
-
-Si se omite el parametro para el valor del átomo el programa tomara el valor N (Nitrógeno)
+<script src="https://asciinema.org/a/EN6o7gxMhfrkNcVqM6LtjTQnx.js" id="asciicast-EN6o7gxMhfrkNcVqM6LtjTQnx" async></script>  
 
 ## Opción exportar -e
 
@@ -103,9 +105,3 @@ Si no se especifica esta opción los resultados se mostrarán en un modo interac
 ### Ejemplo sin la opcion -t  
 
 <script src="https://asciinema.org/a/MLW34JFR7aP9U9brs3fdiv2CR.js" id="asciicast-MLW34JFR7aP9U9brs3fdiv2CR" async></script>
-
-
-
-
-
-
