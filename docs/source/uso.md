@@ -86,13 +86,9 @@ Si se especifica la opcion ` -e ` se guardarán los datos de las opciones especi
 
 Se pueden procesar todas las opciones al mismo tiempo con la opcion corta -a o la opcion larga --ALL
 
-<script src="https://asciinema.org/a/XqYBLYVsG2RDCgik97aTt4cQp.js" id="asciicast-XqYBLYVsG2RDCgik97aTt4cQp" async></script>  
-
-Se debe dar una ruta existente y tener permisos de escritura en este directorio, de lo contrario se dará un error  
-
+<script src="https://asciinema.org/a/zNB976qWDkEOe9oH621bUBzyu.js" id="asciicast-zNB976qWDkEOe9oH621bUBzyu" async></script>  
 
 ## Opción -t
-
 
 Muestra el resultado del análisis directamente en la terminal, es un modo no interactivo salvo si se especifica la opcion `-e`
 en cuyo caso se pedirá la ruta o nombre del archivo a exportar.
