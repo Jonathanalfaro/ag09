@@ -55,7 +55,7 @@ Estas opciones pueden ser combinadas entre ellas
 
 ## Opción MEP (Molecular electrostatic potential)
 
-<script src="https://asciinema.org/a/oFxTJ7CRfzUWzyu92JJyyFsVH.js" id="asciicast-oFxTJ7CRfzUWzyu92JJyyFsVH" async></script>
+<script width="32" height="24" src="https://asciinema.org/a/oFxTJ7CRfzUWzyu92JJyyFsVH.js" id="asciicast-oFxTJ7CRfzUWzyu92JJyyFsVH" async></script>
 
 
 ## Opción NAO (Natural atomic orbital occupancies)
