@@ -11,6 +11,13 @@ Esta es una manera sencilla de descargar el programa haciendo uso de la terminal
 
 <script src="https://asciinema.org/a/3iShTUdgTxjFslhUCyuk4SdMc.js" id="asciicast-3iShTUdgTxjFslhUCyuk4SdMc" async></script>
 
+## Descarga de un archivo de salida de Gaussian09 de prueba
+
+Para probar el programa puedes descargar el archivo de prueba **H20Opt.out** de la siguiente manera
+
+<script src="https://asciinema.org/a/0XFEdv0xLMRFAyr5PT8Xn9ljT.js" id="asciicast-0XFEdv0xLMRFAyr5PT8Xn9ljT" async></script>
+
+
 ## Uso básico
 
 El uso básico del programa es de la siguiente forma:
